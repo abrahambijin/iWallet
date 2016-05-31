@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0439C0F41CF18A8600D86583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C0F31CF18A8600D86583 /* AppDelegate.swift */; };
+		0439C0FC1CF18A8600D86583 /* iWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0439C0FA1CF18A8600D86583 /* iWallet.xcdatamodeld */; };
+		0439C0FE1CF18A8600D86583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0439C0FD1CF18A8600D86583 /* Assets.xcassets */; };
+		0439C1011CF18A8600D86583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0439C0FF1CF18A8600D86583 /* LaunchScreen.storyboard */; };
+		0439C10C1CF18A8600D86583 /* iWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C10B1CF18A8600D86583 /* iWalletTests.swift */; };
+		0439C1271CF18AB500D86583 /* IWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1261CF18AB500D86583 /* IWallet.swift */; };
+		0439C12B1CF18B4A00D86583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1291CF18B4A00D86583 /* ViewController.swift */; };
+		0439C12C1CF18B4A00D86583 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C12A1CF18B4A00D86583 /* LocationSearchTable.swift */; };
+		0439C1361CF18B5B00D86583 /* AccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C12D1CF18B5B00D86583 /* AccountsTableViewCell.swift */; };
+		0439C1371CF18B5B00D86583 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C12E1CF18B5B00D86583 /* SettingsViewController.swift */; };
+		0439C1381CF18B5B00D86583 /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C12F1CF18B5B00D86583 /* AccountsTableViewController.swift */; };
+		0439C1391CF18B5B00D86583 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1301CF18B5B00D86583 /* TransactionsTableViewCell.swift */; };
+		0439C13A1CF18B5B00D86583 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1311CF18B5B00D86583 /* TransactionsTableViewController.swift */; };
+		0439C13B1CF18B5B00D86583 /* SingleTransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1321CF18B5B00D86583 /* SingleTransactionTableViewController.swift */; };
+		0439C13C1CF18B5B00D86583 /* HomeUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1331CF18B5B00D86583 /* HomeUIViewController.swift */; };
+		0439C13D1CF18B5B00D86583 /* AccountListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1341CF18B5B00D86583 /* AccountListTableViewController.swift */; };
+		0439C13E1CF18B5B00D86583 /* CurrencyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1351CF18B5B00D86583 /* CurrencyListTableViewController.swift */; };
+		0439C1401CF18B8400D86583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0439C13F1CF18B8400D86583 /* Main.storyboard */; };
+		0439C1451CF18CC700D86583 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1411CF18CC700D86583 /* Transaction+CoreDataProperties.swift */; };
+		0439C1461CF18CC700D86583 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1421CF18CC700D86583 /* Transaction.swift */; };
+		0439C1471CF18CC700D86583 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1431CF18CC700D86583 /* Account+CoreDataProperties.swift */; };
+		0439C1481CF18CC700D86583 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1441CF18CC700D86583 /* Account.swift */; };
+		0439C1501CF1901E00D86583 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0439C14F1CF1901E00D86583 /* NotificationCenter.framework */; };
+		0439C1531CF1901E00D86583 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1521CF1901E00D86583 /* TodayViewController.swift */; };
+		0439C1561CF1901E00D86583 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0439C1541CF1901E00D86583 /* MainInterface.storyboard */; };
+		0439C15A1CF1901E00D86583 /* iWalletToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0439C14D1CF1901E00D86583 /* iWalletToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0439C17E1CF1A05D00D86583 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1411CF18CC700D86583 /* Transaction+CoreDataProperties.swift */; };
+		0439C17F1CF1A05D00D86583 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1421CF18CC700D86583 /* Transaction.swift */; };
+		0439C1801CF1A05D00D86583 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1431CF18CC700D86583 /* Account+CoreDataProperties.swift */; };
+		0439C1811CF1A05D00D86583 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C1441CF18CC700D86583 /* Account.swift */; };
+		0439C1841CF1A09500D86583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0439C13F1CF18B8400D86583 /* Main.storyboard */; };
+		04556E891CF2DDDC0034B483 /* NavigationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04556E861CF2DDDC0034B483 /* NavigationTesting.swift */; };
+		04556E8A1CF2DDDC0034B483 /* AddAccountTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04556E871CF2DDDC0034B483 /* AddAccountTesting.swift */; };
+		04556E8B1CF2DDDC0034B483 /* EditTransactionTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04556E881CF2DDDC0034B483 /* EditTransactionTesting.swift */; };
+		047DC4451CF1A1EB00551714 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DC4441CF1A1EB00551714 /* ExtensionData.swift */; };
+		047DC4461CF1A1EB00551714 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DC4441CF1A1EB00551714 /* ExtensionData.swift */; };
+		F0698E511CF1E5C700BD30AA /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0698E501CF1E5C700BD30AA /* DataAccess.swift */; };
+		F0698E541CF2146600BD30AA /* CurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0698E531CF2146600BD30AA /* CurrencyList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0439C1081CF18A8600D86583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0439C0E81CF18A8600D86583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0439C0EF1CF18A8600D86583;
+			remoteInfo = iWallet;
+		};
+		0439C1131CF18A8600D86583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0439C0E81CF18A8600D86583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0439C0EF1CF18A8600D86583;
+			remoteInfo = iWallet;
+		};
+		0439C1581CF1901E00D86583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0439C0E81CF18A8600D86583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0439C14C1CF1901E00D86583;
+			remoteInfo = iWalletToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0439C15E1CF1901E00D86583 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0439C15A1CF1901E00D86583 /* iWalletToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0439C0F01CF18A8600D86583 /* iWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0439C0F31CF18A8600D86583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0439C0FB1CF18A8600D86583 /* iWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iWallet.xcdatamodel; sourceTree = "<group>"; };
+		0439C0FD1CF18A8600D86583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0439C1001CF18A8600D86583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0439C1021CF18A8600D86583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0439C1071CF18A8600D86583 /* iWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0439C10B1CF18A8600D86583 /* iWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iWalletTests.swift; sourceTree = "<group>"; };
+		0439C10D1CF18A8600D86583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0439C1121CF18A8600D86583 /* iWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0439C1181CF18A8600D86583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0439C1261CF18AB500D86583 /* IWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWallet.swift; sourceTree = "<group>"; };
+		0439C1291CF18B4A00D86583 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0439C12A1CF18B4A00D86583 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		0439C12D1CF18B5B00D86583 /* AccountsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewCell.swift; sourceTree = "<group>"; };
+		0439C12E1CF18B5B00D86583 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0439C12F1CF18B5B00D86583 /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
+		0439C1301CF18B5B00D86583 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		0439C1311CF18B5B00D86583 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
+		0439C1321CF18B5B00D86583 /* SingleTransactionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTransactionTableViewController.swift; sourceTree = "<group>"; };
+		0439C1331CF18B5B00D86583 /* HomeUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUIViewController.swift; sourceTree = "<group>"; };
+		0439C1341CF18B5B00D86583 /* AccountListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountListTableViewController.swift; sourceTree = "<group>"; };
+		0439C1351CF18B5B00D86583 /* CurrencyListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewController.swift; sourceTree = "<group>"; };
+		0439C13F1CF18B8400D86583 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0439C1411CF18CC700D86583 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0439C1421CF18CC700D86583 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		0439C1431CF18CC700D86583 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0439C1441CF18CC700D86583 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		0439C14D1CF1901E00D86583 /* iWalletToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iWalletToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0439C14F1CF1901E00D86583 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0439C1521CF1901E00D86583 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		0439C1551CF1901E00D86583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0439C1571CF1901E00D86583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0439C15F1CF1973C00D86583 /* iWallet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = iWallet.xcodeproj; sourceTree = "<group>"; };
+		0439C1621CF1975200D86583 /* project.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = project.xcworkspace; path = iWallet.xcodeproj/project.xcworkspace; sourceTree = "<group>"; };
+		04556E861CF2DDDC0034B483 /* NavigationTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTesting.swift; sourceTree = "<group>"; };
+		04556E871CF2DDDC0034B483 /* AddAccountTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountTesting.swift; sourceTree = "<group>"; };
+		04556E881CF2DDDC0034B483 /* EditTransactionTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTransactionTesting.swift; sourceTree = "<group>"; };
+		047DC4441CF1A1EB00551714 /* ExtensionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
+		F0698E501CF1E5C700BD30AA /* DataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
+		F0698E531CF2146600BD30AA /* CurrencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0439C0ED1CF18A8600D86583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C1041CF18A8600D86583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C10F1CF18A8600D86583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C14A1CF1901E00D86583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0439C1501CF1901E00D86583 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0439C0E71CF18A8600D86583 = {
+			isa = PBXGroup;
+			children = (
+				0439C0F21CF18A8600D86583 /* iWallet */,
+				0439C10A1CF18A8600D86583 /* iWalletTests */,
+				0439C1151CF18A8600D86583 /* iWalletUITests */,
+				0439C1511CF1901E00D86583 /* iWalletToday */,
+				0439C14E1CF1901E00D86583 /* Frameworks */,
+				0439C0F11CF18A8600D86583 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0439C0F11CF18A8600D86583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0439C0F01CF18A8600D86583 /* iWallet.app */,
+				0439C1071CF18A8600D86583 /* iWalletTests.xctest */,
+				0439C1121CF18A8600D86583 /* iWalletUITests.xctest */,
+				0439C14D1CF1901E00D86583 /* iWalletToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0439C0F21CF18A8600D86583 /* iWallet */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5619D1CF3F6FA00C8015A /* Database */,
+				F0A5619C1CF3F6E400C8015A /* App Files */,
+				F0A5619B1CF3F68300C8015A /* View */,
+				0439C1771CF19AF400D86583 /* Utilities */,
+				0439C1251CF18A9F00D86583 /* Controller */,
+				0439C1241CF18A9600D86583 /* Model */,
+			);
+			path = iWallet;
+			sourceTree = "<group>";
+		};
+		0439C10A1CF18A8600D86583 /* iWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				0439C10B1CF18A8600D86583 /* iWalletTests.swift */,
+				0439C10D1CF18A8600D86583 /* Info.plist */,
+			);
+			path = iWalletTests;
+			sourceTree = "<group>";
+		};
+		0439C1151CF18A8600D86583 /* iWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04556E861CF2DDDC0034B483 /* NavigationTesting.swift */,
+				04556E871CF2DDDC0034B483 /* AddAccountTesting.swift */,
+				04556E881CF2DDDC0034B483 /* EditTransactionTesting.swift */,
+				0439C1181CF18A8600D86583 /* Info.plist */,
+			);
+			path = iWalletUITests;
+			sourceTree = "<group>";
+		};
+		0439C1241CF18A9600D86583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0439C1411CF18CC700D86583 /* Transaction+CoreDataProperties.swift */,
+				0439C1421CF18CC700D86583 /* Transaction.swift */,
+				0439C1431CF18CC700D86583 /* Account+CoreDataProperties.swift */,
+				0439C1441CF18CC700D86583 /* Account.swift */,
+				0439C1261CF18AB500D86583 /* IWallet.swift */,
+				047DC4441CF1A1EB00551714 /* ExtensionData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0439C1251CF18A9F00D86583 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0439C12D1CF18B5B00D86583 /* AccountsTableViewCell.swift */,
+				0439C12E1CF18B5B00D86583 /* SettingsViewController.swift */,
+				0439C12F1CF18B5B00D86583 /* AccountsTableViewController.swift */,
+				0439C1301CF18B5B00D86583 /* TransactionsTableViewCell.swift */,
+				0439C1311CF18B5B00D86583 /* TransactionsTableViewController.swift */,
+				0439C1321CF18B5B00D86583 /* SingleTransactionTableViewController.swift */,
+				0439C1331CF18B5B00D86583 /* HomeUIViewController.swift */,
+				0439C1341CF18B5B00D86583 /* AccountListTableViewController.swift */,
+				0439C1351CF18B5B00D86583 /* CurrencyListTableViewController.swift */,
+				0439C1281CF18ACA00D86583 /* MapKit */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0439C1281CF18ACA00D86583 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				0439C1291CF18B4A00D86583 /* ViewController.swift */,
+				0439C12A1CF18B4A00D86583 /* LocationSearchTable.swift */,
+			);
+			name = MapKit;
+			sourceTree = "<group>";
+		};
+		0439C14E1CF1901E00D86583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0439C1621CF1975200D86583 /* project.xcworkspace */,
+				0439C15F1CF1973C00D86583 /* iWallet.xcodeproj */,
+				0439C14F1CF1901E00D86583 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0439C1511CF1901E00D86583 /* iWalletToday */ = {
+			isa = PBXGroup;
+			children = (
+				0439C1521CF1901E00D86583 /* TodayViewController.swift */,
+				0439C1541CF1901E00D86583 /* MainInterface.storyboard */,
+				0439C1571CF1901E00D86583 /* Info.plist */,
+			);
+			path = iWalletToday;
+			sourceTree = "<group>";
+		};
+		0439C1601CF1973C00D86583 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0439C1771CF19AF400D86583 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F0698E501CF1E5C700BD30AA /* DataAccess.swift */,
+				F0698E531CF2146600BD30AA /* CurrencyList.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F0A5619B1CF3F68300C8015A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0439C13F1CF18B8400D86583 /* Main.storyboard */,
+				0439C0FF1CF18A8600D86583 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F0A5619C1CF3F6E400C8015A /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				0439C0F31CF18A8600D86583 /* AppDelegate.swift */,
+				0439C0FD1CF18A8600D86583 /* Assets.xcassets */,
+				0439C1021CF18A8600D86583 /* Info.plist */,
+			);
+			name = "App Files";
+			sourceTree = "<group>";
+		};
+		F0A5619D1CF3F6FA00C8015A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0439C0FA1CF18A8600D86583 /* iWallet.xcdatamodeld */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0439C0EF1CF18A8600D86583 /* iWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0439C11B1CF18A8600D86583 /* Build configuration list for PBXNativeTarget "iWallet" */;
+			buildPhases = (
+				0439C0EC1CF18A8600D86583 /* Sources */,
+				0439C0ED1CF18A8600D86583 /* Frameworks */,
+				0439C0EE1CF18A8600D86583 /* Resources */,
+				0439C15E1CF1901E00D86583 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0439C1591CF1901E00D86583 /* PBXTargetDependency */,
+			);
+			name = iWallet;
+			productName = iWallet;
+			productReference = 0439C0F01CF18A8600D86583 /* iWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0439C1061CF18A8600D86583 /* iWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0439C11E1CF18A8600D86583 /* Build configuration list for PBXNativeTarget "iWalletTests" */;
+			buildPhases = (
+				0439C1031CF18A8600D86583 /* Sources */,
+				0439C1041CF18A8600D86583 /* Frameworks */,
+				0439C1051CF18A8600D86583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0439C1091CF18A8600D86583 /* PBXTargetDependency */,
+			);
+			name = iWalletTests;
+			productName = iWalletTests;
+			productReference = 0439C1071CF18A8600D86583 /* iWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0439C1111CF18A8600D86583 /* iWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0439C1211CF18A8600D86583 /* Build configuration list for PBXNativeTarget "iWalletUITests" */;
+			buildPhases = (
+				0439C10E1CF18A8600D86583 /* Sources */,
+				0439C10F1CF18A8600D86583 /* Frameworks */,
+				0439C1101CF18A8600D86583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0439C1141CF18A8600D86583 /* PBXTargetDependency */,
+			);
+			name = iWalletUITests;
+			productName = iWalletUITests;
+			productReference = 0439C1121CF18A8600D86583 /* iWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0439C14C1CF1901E00D86583 /* iWalletToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0439C15D1CF1901E00D86583 /* Build configuration list for PBXNativeTarget "iWalletToday" */;
+			buildPhases = (
+				0439C1491CF1901E00D86583 /* Sources */,
+				0439C14A1CF1901E00D86583 /* Frameworks */,
+				0439C14B1CF1901E00D86583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iWalletToday;
+			productName = iWalletToday;
+			productReference = 0439C14D1CF1901E00D86583 /* iWalletToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0439C0E81CF18A8600D86583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Bijin Abraham Idicula";
+				TargetAttributes = {
+					0439C0EF1CF18A8600D86583 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6GBTAUM2Z3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					0439C1061CF18A8600D86583 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0439C0EF1CF18A8600D86583;
+					};
+					0439C1111CF18A8600D86583 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0439C0EF1CF18A8600D86583;
+					};
+					0439C14C1CF1901E00D86583 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 0439C0EB1CF18A8600D86583 /* Build configuration list for PBXProject "iWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0439C0E71CF18A8600D86583;
+			productRefGroup = 0439C0F11CF18A8600D86583 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0439C1601CF1973C00D86583 /* Products */;
+					ProjectRef = 0439C15F1CF1973C00D86583 /* iWallet.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0439C0EF1CF18A8600D86583 /* iWallet */,
+				0439C1061CF18A8600D86583 /* iWalletTests */,
+				0439C1111CF18A8600D86583 /* iWalletUITests */,
+				0439C14C1CF1901E00D86583 /* iWalletToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0439C0EE1CF18A8600D86583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0439C1401CF18B8400D86583 /* Main.storyboard in Resources */,
+				0439C1011CF18A8600D86583 /* LaunchScreen.storyboard in Resources */,
+				0439C0FE1CF18A8600D86583 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C1051CF18A8600D86583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C1101CF18A8600D86583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C14B1CF1901E00D86583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0439C1561CF1901E00D86583 /* MainInterface.storyboard in Resources */,
+				0439C1841CF1A09500D86583 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0439C0EC1CF18A8600D86583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0439C13B1CF18B5B00D86583 /* SingleTransactionTableViewController.swift in Sources */,
+				047DC4451CF1A1EB00551714 /* ExtensionData.swift in Sources */,
+				0439C13A1CF18B5B00D86583 /* TransactionsTableViewController.swift in Sources */,
+				0439C1461CF18CC700D86583 /* Transaction.swift in Sources */,
+				0439C1391CF18B5B00D86583 /* TransactionsTableViewCell.swift in Sources */,
+				0439C13C1CF18B5B00D86583 /* HomeUIViewController.swift in Sources */,
+				0439C1481CF18CC700D86583 /* Account.swift in Sources */,
+				0439C0FC1CF18A8600D86583 /* iWallet.xcdatamodeld in Sources */,
+				0439C1451CF18CC700D86583 /* Transaction+CoreDataProperties.swift in Sources */,
+				F0698E541CF2146600BD30AA /* CurrencyList.swift in Sources */,
+				0439C1381CF18B5B00D86583 /* AccountsTableViewController.swift in Sources */,
+				0439C12C1CF18B4A00D86583 /* LocationSearchTable.swift in Sources */,
+				0439C1371CF18B5B00D86583 /* SettingsViewController.swift in Sources */,
+				0439C1471CF18CC700D86583 /* Account+CoreDataProperties.swift in Sources */,
+				0439C13E1CF18B5B00D86583 /* CurrencyListTableViewController.swift in Sources */,
+				0439C1271CF18AB500D86583 /* IWallet.swift in Sources */,
+				0439C12B1CF18B4A00D86583 /* ViewController.swift in Sources */,
+				0439C0F41CF18A8600D86583 /* AppDelegate.swift in Sources */,
+				0439C13D1CF18B5B00D86583 /* AccountListTableViewController.swift in Sources */,
+				0439C1361CF18B5B00D86583 /* AccountsTableViewCell.swift in Sources */,
+				F0698E511CF1E5C700BD30AA /* DataAccess.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C1031CF18A8600D86583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0439C10C1CF18A8600D86583 /* iWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C10E1CF18A8600D86583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04556E891CF2DDDC0034B483 /* NavigationTesting.swift in Sources */,
+				04556E8B1CF2DDDC0034B483 /* EditTransactionTesting.swift in Sources */,
+				04556E8A1CF2DDDC0034B483 /* AddAccountTesting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0439C1491CF1901E00D86583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0439C1801CF1A05D00D86583 /* Account+CoreDataProperties.swift in Sources */,
+				0439C17E1CF1A05D00D86583 /* Transaction+CoreDataProperties.swift in Sources */,
+				0439C1531CF1901E00D86583 /* TodayViewController.swift in Sources */,
+				047DC4461CF1A1EB00551714 /* ExtensionData.swift in Sources */,
+				0439C17F1CF1A05D00D86583 /* Transaction.swift in Sources */,
+				0439C1811CF1A05D00D86583 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0439C1091CF18A8600D86583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0439C0EF1CF18A8600D86583 /* iWallet */;
+			targetProxy = 0439C1081CF18A8600D86583 /* PBXContainerItemProxy */;
+		};
+		0439C1141CF18A8600D86583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0439C0EF1CF18A8600D86583 /* iWallet */;
+			targetProxy = 0439C1131CF18A8600D86583 /* PBXContainerItemProxy */;
+		};
+		0439C1591CF1901E00D86583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0439C14C1CF1901E00D86583 /* iWalletToday */;
+			targetProxy = 0439C1581CF1901E00D86583 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0439C0FF1CF18A8600D86583 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0439C1001CF18A8600D86583 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0439C1541CF1901E00D86583 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0439C1551CF1901E00D86583 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0439C1191CF18A8600D86583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0439C11A1CF18A8600D86583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0439C11C1CF18A8600D86583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = iWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0439C11D1CF18A8600D86583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = iWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0439C11F1CF18A8600D86583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iWallet.app/iWallet";
+			};
+			name = Debug;
+		};
+		0439C1201CF18A8600D86583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iWallet.app/iWallet";
+			};
+			name = Release;
+		};
+		0439C1221CF18A8600D86583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iWallet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0439C1231CF18A8600D86583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iWallet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		0439C15B1CF1901E00D86583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iWalletToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWallet.iWalletToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0439C15C1CF1901E00D86583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iWalletToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = s3517187.rmit.edu.au.iWallet.iWallet.iWalletToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0439C0EB1CF18A8600D86583 /* Build configuration list for PBXProject "iWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0439C1191CF18A8600D86583 /* Debug */,
+				0439C11A1CF18A8600D86583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0439C11B1CF18A8600D86583 /* Build configuration list for PBXNativeTarget "iWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0439C11C1CF18A8600D86583 /* Debug */,
+				0439C11D1CF18A8600D86583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0439C11E1CF18A8600D86583 /* Build configuration list for PBXNativeTarget "iWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0439C11F1CF18A8600D86583 /* Debug */,
+				0439C1201CF18A8600D86583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0439C1211CF18A8600D86583 /* Build configuration list for PBXNativeTarget "iWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0439C1221CF18A8600D86583 /* Debug */,
+				0439C1231CF18A8600D86583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0439C15D1CF1901E00D86583 /* Build configuration list for PBXNativeTarget "iWalletToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0439C15B1CF1901E00D86583 /* Debug */,
+				0439C15C1CF1901E00D86583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0439C0FA1CF18A8600D86583 /* iWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0439C0FB1CF18A8600D86583 /* iWallet.xcdatamodel */,
+			);
+			currentVersion = 0439C0FB1CF18A8600D86583 /* iWallet.xcdatamodel */;
+			path = iWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0439C0E81CF18A8600D86583 /* Project object */;
+}

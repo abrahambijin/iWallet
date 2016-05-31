@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="iWalletToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyA-zD-BHt">
+                                <rect key="frame" x="175" y="19" width="129" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount left to spend today" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyp-Je-IUP">
+                                <rect key="frame" x="16" y="58" width="134" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Balance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW9-W2-gof">
+                                <rect key="frame" x="179" y="68" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="In7-Za-xNw"/>
+                                    <constraint firstAttribute="width" constant="125" id="MZN-ds-Jc4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="16" y="17" width="123" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dyp-Je-IUP" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="5" id="5vr-tv-1r0"/>
+                            <constraint firstItem="tW9-W2-gof" firstAttribute="top" secondItem="uyA-zD-BHt" secondAttribute="bottom" constant="17" id="7t6-B7-URH"/>
+                            <constraint firstItem="tW9-W2-gof" firstAttribute="leading" secondItem="uyA-zD-BHt" secondAttribute="leading" constant="4" id="BXe-NZ-DYm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tW9-W2-gof" secondAttribute="trailing" id="EGe-Se-qp4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uyA-zD-BHt" secondAttribute="trailing" id="HSH-uP-oGx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dyp-Je-IUP" secondAttribute="leading" id="Ja2-lj-auq"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="17" id="NV9-8A-56E"/>
+                            <constraint firstItem="uyA-zD-BHt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="25" id="Q8m-jE-r91"/>
+                            <constraint firstItem="uyA-zD-BHt" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="19" id="cII-so-nzh"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="tW9-W2-gof" secondAttribute="bottom" constant="31" id="fAc-T3-JPe"/>
+                            <constraint firstItem="tW9-W2-gof" firstAttribute="leading" secondItem="dyp-Je-IUP" secondAttribute="trailing" constant="29" id="nmK-TZ-yh4"/>
+                            <constraint firstItem="tW9-W2-gof" firstAttribute="centerY" secondItem="dyp-Je-IUP" secondAttribute="centerY" id="urQ-MO-LrA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GcN-lo-r42" secondAttribute="leading" id="vUl-FL-qiU"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="120"/>
+                    <connections>
+                        <outlet property="budgetBalance" destination="tW9-W2-gof" id="vif-Vt-nea"/>
+                        <outlet property="defaultAccount" destination="GcN-lo-r42" id="9Ad-Gr-tak"/>
+                        <outlet property="defaultAccountBalance" destination="uyA-zD-BHt" id="6xI-nh-fUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="284"/>
+        </scene>
+    </scenes>
+</document>
